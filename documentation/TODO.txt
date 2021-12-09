@@ -1,0 +1,2 @@
+DOCUMENTATION:
+- Rivedere tutto quello che ho scritto, in particolare la parte sull'algoritmo
