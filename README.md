@@ -8,7 +8,7 @@ La codifica di Hamming implica l’aggiunta di alcuni bit di parità Px accanto 
 Dx. Ogni bit di parità deve essere calcolato attraverso l’operazione di XOR tra alcuni bit della parola di
 ingresso. La tabella seguente indica, per ogni bit di parità, quali sono i bit coinvolti.
 
-![Screenshot](tabellaParityBit.png)
+![Screenshot](tabellaParityBit.PNG)
 
 La seconda riga della tabella riporta come deve essere costruita la parola in uscita dal codificatore (posizione
 1 indica il bit meno significativo)
@@ -17,11 +17,11 @@ Notare che il bit di partià PO, deve essere calcolato sfruttando anche gli altr
 ![Screenshot](blockDiagram.PNG)
 
 La relazione finale del progetto deve contenere:
-• Introduzione (descrizione algoritmo, possibili applicazioni, possibili architetture, etc.)
-• Descrizione dell’architettura (diagramma a blocchi, ingressi/uscite, etc.)
-• Codice VHDL (con commenti dettagliati)
-• Test-plan e relativi Testbench per la verifica
-• Risultati della sintesi logica automatica su piattaforma Xilinx FPGA Zync: risorse utilizzate (slice,
+* Introduzione (descrizione algoritmo, possibili applicazioni, possibili architetture, etc.)
+* Descrizione dell’architettura (diagramma a blocchi, ingressi/uscite, etc.)
+* Codice VHDL (con commenti dettagliati)
+* Test-plan e relativi Testbench per la verifica
+* Risultati della sintesi logica automatica su piattaforma Xilinx FPGA Zync: risorse utilizzate (slice,
 LUT, etc.), massima frequenza di funzionamento, cammino critico, etc. commentando eventuali
 messaggi di warnings.
-• Conclusioni
+* Conclusioni
