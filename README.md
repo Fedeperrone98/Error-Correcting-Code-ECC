@@ -8,13 +8,13 @@ La codifica di Hamming implica l’aggiunta di alcuni bit di parità Px accanto 
 Dx. Ogni bit di parità deve essere calcolato attraverso l’operazione di XOR tra alcuni bit della parola di
 ingresso. La tabella seguente indica, per ogni bit di parità, quali sono i bit coinvolti.
 
-![Screenshot](tabellaParityBit.PNG)
+![Screenshot](img/tabellaParityBit.PNG)
 
 La seconda riga della tabella riporta come deve essere costruita la parola in uscita dal codificatore (posizione
 1 indica il bit meno significativo)
 Notare che il bit di partià PO, deve essere calcolato sfruttando anche gli altri bit di partià P1, P2, P4, P8.
 
-![Screenshot](blockDiagram.PNG)
+![Screenshot](img/blockDiagram.PNG)
 
 La relazione finale del progetto deve contenere:
 * Introduzione (descrizione algoritmo, possibili applicazioni, possibili architetture, etc.)
