@@ -1,0 +1,7 @@
+https://github.com/nobodywasishere/EccCPU
+
+esempio doc https://github.com/gerti98/Electronic-Systems-Project/blob/main/doc/perceptronReport.pdf
+		https://github.com/lossi771/Cordic-Arctan/blob/main/report.pdf
+
+
+articoli utili https://www.geeksforgeeks.org/hamming-code-in-computer-network/
