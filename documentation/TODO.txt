@@ -1,2 +1,5 @@
 DOCUMENTATION:
-- Rivedere tutto quello che ho scritto, in particolare la parte sull'algoritmo
+- continuare l'architettura
+
+SRC:
+-debug encoder
