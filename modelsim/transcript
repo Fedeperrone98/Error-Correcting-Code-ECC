@@ -1,19 +1,8 @@
-# Compile of DFC.vhd failed with 1 errors.
 # Compile of DFF_N.vhd was successful.
-# Compile of Encoder.vhd was successful.
-# 3 compiles, 1 failed with 1 error.
-# Compile of DFC.vhd was successful.
-# Compile of DFF_N.vhd was successful.
-# Compile of Encoder.vhd was successful.
-# 3 compiles, 0 failed with no errors.
-# Compile of DFF_N.vhd was successful.
-# Compile of Encoder.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-# Compile of DFF_N.vhd was successful.
-# Compile of Encoder.vhd was successful.
+# Compile of Encoder.vhd failed with 8 errors.
 # Compile of DFF_N_tb.vhd was successful.
-# Compile of Encoder_tb.vhd failed with 1 errors.
-# 4 compiles, 1 failed with 1 error.
+# Compile of Encoder_tb.vhd was successful.
+# 4 compiles, 1 failed with 8 errors.
 # Compile of DFF_N.vhd was successful.
 # Compile of Encoder.vhd was successful.
 # Compile of DFF_N_tb.vhd was successful.
@@ -21,56 +10,7 @@
 # 4 compiles, 0 failed with no errors.
 vsim -gui work.encoder_tb
 # vsim -gui work.encoder_tb 
-# Start time: 19:27:48 on Dec 11,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.encoder_tb(rtl)
-# Loading work.encoder(beh)
-add wave -position insertpoint  \
-sim:/encoder_tb/clk \
-sim:/encoder_tb/data_in \
-sim:/encoder_tb/data_encoded \
-sim:/encoder_tb/testing \
-sim:/encoder_tb/clk_period
-run -all
-add wave -position insertpoint  \
-sim:/encoder_tb/dut/p4
-# Break key hit
-quit -sim
-# End time: 19:33:32 on Dec 11,2021, Elapsed time: 0:05:44
-# Errors: 0, Warnings: 11
-vsim -gui work.encoder_tb
-# vsim -gui work.encoder_tb 
-# Start time: 19:36:05 on Dec 11,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.encoder_tb(rtl)
-# Loading work.encoder(beh)
-add wave -position insertpoint  \
-sim:/encoder_tb/clk \
-sim:/encoder_tb/data_in \
-sim:/encoder_tb/data_encoded \
-sim:/encoder_tb/testing \
-sim:/encoder_tb/clk_period
-run -all
-add wave -position insertpoint  \
-sim:/encoder_tb/dut/p4
-# Break key hit
-restart -f
-run -all
-quit -sim
-# End time: 19:44:57 on Dec 11,2021, Elapsed time: 0:08:52
-# Errors: 0, Warnings: 1
-# Compile of DFF_N.vhd was successful.
-# Compile of Encoder.vhd was successful.
-# Compile of DFF_N_tb.vhd was successful.
-# Compile of Encoder_tb.vhd was successful.
-# 4 compiles, 0 failed with no errors.
-vsim -gui work.encoder_tb
-# vsim -gui work.encoder_tb 
-# Start time: 19:45:15 on Dec 11,2021
+# Start time: 20:04:00 on Dec 11,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -84,5 +24,5 @@ sim:/encoder_tb/testing \
 sim:/encoder_tb/clk_period
 run -all
 quit -sim
-# End time: 19:51:23 on Dec 11,2021, Elapsed time: 0:06:08
-# Errors: 0, Warnings: 2
+# End time: 20:04:42 on Dec 11,2021, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 3
