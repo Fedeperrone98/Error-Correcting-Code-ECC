@@ -19,14 +19,14 @@ architecture struct of DFF_N is
 	begin
    
   		ddf_n_proc: process(clk, a_rstn)
-			begin
-				if(a_rstn = '0') then
-					q <= (others => '0');
-				elsif(rising_edge(clk)) then
-					if(en = '1') then
-						q <= d;
-					end if;
+		begin
+			if(a_rstn = '0') then
+				q <= (others => '0');
+			elsif(rising_edge(clk)) then
+				if(en = '1') then
+					q <= d;
 				end if;
+			end if;
 		end process;
    
 	end struct;
