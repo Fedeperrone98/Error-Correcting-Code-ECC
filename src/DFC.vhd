@@ -13,7 +13,7 @@ entity DFC is
         d: in std_logic;
         q: out std_logic
     );
-end Dfc;
+end DFC;
 
 architecture rtl of DFC is
     begin

@@ -8,7 +8,7 @@ entity Encoder is
         data_out : out std_logic_vector(15 downto 0)
 	);
 			
-end DFF_N;
+end Encoder;
 
 architecture beh of Encoder is   
     signal p1 : std_logic;
