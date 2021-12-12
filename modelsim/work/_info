@@ -56,7 +56,7 @@ Edff_n
 Z14 w1639243533
 R3
 R2
-!i122 28
+!i122 64
 R4
 Z15 8C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/src/DFF_N.vhd
 Z16 FC:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/src/DFF_N.vhd
@@ -66,9 +66,9 @@ VNYDm8i8?f[fInk:BEk7hJ3
 !s100 9Moe3[zgT6X2U^z@RoAJG3
 R7
 32
-Z17 !s110 1639249430
+Z17 !s110 1639301289
 !i10b 1
-Z18 !s108 1639249430.000000
+Z18 !s108 1639301289.000000
 Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/src/DFF_N.vhd|
 Z20 !s107 C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/src/DFF_N.vhd|
 !i113 1
@@ -78,7 +78,7 @@ Astruct
 R3
 R2
 DEx4 work 5 dff_n 0 22 NYDm8i8?f[fInk:BEk7hJ3
-!i122 28
+!i122 64
 l19
 L18 15
 VFTONdCIXHjE0=ZCCo;5TX2
@@ -94,13 +94,13 @@ R20
 R12
 R13
 Edff_n_tb
-Z21 w1635528350
+Z21 w1639299925
 R1
 Z22 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z23 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R3
 R2
-!i122 30
+!i122 66
 R4
 Z24 8C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/tb/DFF_N_tb.vhd
 Z25 FC:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/tb/DFF_N_tb.vhd
@@ -110,11 +110,11 @@ VE_;:X_CK>e63Jg<S]27E:3
 !s100 KGKDJh_6QDb?QdAj3GNH71
 R7
 32
-Z26 !s110 1639249431
+R17
 !i10b 1
-Z27 !s108 1639249431.000000
-Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/tb/DFF_N_tb.vhd|
-Z29 !s107 C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/tb/DFF_N_tb.vhd|
+R18
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/tb/DFF_N_tb.vhd|
+Z27 !s107 C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/tb/DFF_N_tb.vhd|
 !i113 1
 R12
 R13
@@ -125,40 +125,40 @@ R23
 R3
 R2
 DEx4 work 8 dff_n_tb 0 22 E_;:X_CK>e63Jg<S]27E:3
-!i122 30
+!i122 66
 l34
 L11 61
-V;kUn5j9EWDV?7Km2UYSBZ0
-!s100 0?oT[DABiFZAlh[]SSbPE3
+ViCjG?9@HEnc;>o<31_D`b3
+!s100 ^3a8`NQj[7=Ja?kZIb3L23
 R7
 32
-R26
+R17
 !i10b 1
+R18
+R26
 R27
-R28
-R29
 !i113 1
 R12
 R13
 Eencoder
-Z30 w1639249424
+Z28 w1639300016
 R3
 R2
-!i122 29
+!i122 65
 R4
-Z31 8C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/src/Encoder.vhd
-Z32 FC:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/src/Encoder.vhd
+Z29 8C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/src/Encoder.vhd
+Z30 FC:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/src/Encoder.vhd
 l0
 L5 1
 VPmY:m;W1]F=8ZM;:fdG652
 !s100 aEeU@j>iRX0mIc^Hm`Z7i1
 R7
 32
-R26
+R17
 !i10b 1
 R18
-Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/src/Encoder.vhd|
-Z34 !s107 C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/src/Encoder.vhd|
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/src/Encoder.vhd|
+Z32 !s107 C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/src/Encoder.vhd|
 !i113 1
 R12
 R13
@@ -166,59 +166,59 @@ Abeh
 R3
 R2
 DEx4 work 7 encoder 0 22 PmY:m;W1]F=8ZM;:fdG652
-!i122 29
+!i122 65
 l20
-L13 26
-Vh>[o1n>ml]VVhBS0T?HlH3
-!s100 [4KITlZL444bOIj0UJ2b=1
+L13 24
+V^C3k?SgK<@nnlc4>gNmAz2
+!s100 KkA_7U7ZAL?KzSIkXmJaK3
 R7
 32
-R26
+R17
 !i10b 1
 R18
-R33
-R34
+R31
+R32
 !i113 1
 R12
 R13
 Eencoder_tb
-Z35 w1639247246
+Z33 w1639301282
 R3
 R2
-!i122 31
+!i122 67
 R4
-Z36 8C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/tb/Encoder_tb.vhd
-Z37 FC:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/tb/Encoder_tb.vhd
+Z34 8C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/tb/Encoder_tb.vhd
+Z35 FC:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/tb/Encoder_tb.vhd
 l0
 L5 1
 VHmkM4zc8]JglEMEJ;4JWa1
 !s100 hQn`B6UJBOmoahAE3YWNj0
 R7
 32
-R26
+R17
 !i10b 1
-R27
-Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/tb/Encoder_tb.vhd|
-Z39 !s107 C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/tb/Encoder_tb.vhd|
+R18
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/tb/Encoder_tb.vhd|
+Z37 !s107 C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/tb/Encoder_tb.vhd|
 !i113 1
 R12
 R13
 Artl
 R3
 R2
-Z40 DEx4 work 10 encoder_tb 0 22 HmkM4zc8]JglEMEJ;4JWa1
-!i122 31
+Z38 DEx4 work 10 encoder_tb 0 22 HmkM4zc8]JglEMEJ;4JWa1
+!i122 67
 l25
-Z41 L9 37
-Z42 V`Q5hzVZEO<^O=2bSEDc[I1
-Z43 !s100 nGWBm=442noLkfzeH:MN80
+L9 49
+Vdl3Qbm<WiZHKH17BP3_H70
+!s100 EzSaNHaDGlj=CD8jZgSlA3
 R7
 32
-R26
+R17
 !i10b 1
-R27
-R38
-R39
+R18
+R36
+R37
 !i113 1
 R12
 R13

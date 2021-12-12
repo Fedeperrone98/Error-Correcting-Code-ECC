@@ -1,16 +1,11 @@
 # Compile of DFF_N.vhd was successful.
-# Compile of Encoder.vhd failed with 8 errors.
-# Compile of DFF_N_tb.vhd was successful.
-# Compile of Encoder_tb.vhd was successful.
-# 4 compiles, 1 failed with 8 errors.
-# Compile of DFF_N.vhd was successful.
 # Compile of Encoder.vhd was successful.
 # Compile of DFF_N_tb.vhd was successful.
 # Compile of Encoder_tb.vhd was successful.
 # 4 compiles, 0 failed with no errors.
 vsim -gui work.encoder_tb
 # vsim -gui work.encoder_tb 
-# Start time: 20:04:00 on Dec 11,2021
+# Start time: 09:47:29 on Dec 12,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -24,5 +19,177 @@ sim:/encoder_tb/testing \
 sim:/encoder_tb/clk_period
 run -all
 quit -sim
-# End time: 20:04:42 on Dec 11,2021, Elapsed time: 0:00:42
-# Errors: 0, Warnings: 3
+# End time: 09:49:31 on Dec 12,2021, Elapsed time: 0:02:02
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd failed with 8 errors.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# 4 compiles, 1 failed with 8 errors.
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd failed with 2 errors.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# 4 compiles, 1 failed with 2 errors.
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.encoder_tb
+# vsim -gui work.encoder_tb 
+# Start time: 09:52:15 on Dec 12,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.encoder_tb(rtl)
+# Loading work.encoder(beh)
+add wave -position insertpoint  \
+sim:/encoder_tb/clk \
+sim:/encoder_tb/data_in \
+sim:/encoder_tb/data_encoded \
+sim:/encoder_tb/testing \
+sim:/encoder_tb/clk_period
+run -all
+quit -sim
+# End time: 09:58:17 on Dec 12,2021, Elapsed time: 0:06:02
+# Errors: 0, Warnings: 4
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.encoder_tb
+# vsim -gui work.encoder_tb 
+# Start time: 10:03:05 on Dec 12,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.encoder_tb(rtl)
+# Loading work.encoder(beh)
+add wave -position insertpoint  \
+sim:/encoder_tb/clk \
+sim:/encoder_tb/data_in \
+sim:/encoder_tb/data_encoded \
+sim:/encoder_tb/testing \
+sim:/encoder_tb/clk_period
+run -all
+quit -sim
+# End time: 10:03:55 on Dec 12,2021, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 2
+vsim -gui work.dff_n_tb
+# vsim -gui work.dff_n_tb 
+# Start time: 10:04:17 on Dec 12,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.dff_n_tb(rtl)
+# Loading work.dff_n(struct)
+# ** Fatal: (vsim-3817) Port "a_rstn" of entity "dff_n" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /dff_n_tb/dut File: C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/src/DFF_N.vhd Line: 10
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 10:04:17 on Dec 12,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.dff_n_tb
+# vsim -gui work.dff_n_tb 
+# Start time: 10:05:42 on Dec 12,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.dff_n_tb(rtl)
+# Loading work.dff_n(struct)
+add wave -position insertpoint  \
+sim:/dff_n_tb/clk \
+sim:/dff_n_tb/a_rstn \
+sim:/dff_n_tb/d \
+sim:/dff_n_tb/en \
+sim:/dff_n_tb/q \
+sim:/dff_n_tb/testing \
+sim:/dff_n_tb/clk_period \
+sim:/dff_n_tb/Nbit
+run -all
+quit -sim
+# End time: 10:06:37 on Dec 12,2021, Elapsed time: 0:00:55
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.encoder_tb
+# vsim -gui work.encoder_tb 
+# Start time: 10:14:20 on Dec 12,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.encoder_tb(rtl)
+# Loading work.encoder(beh)
+add wave -position insertpoint  \
+sim:/encoder_tb/clk \
+sim:/encoder_tb/data_in \
+sim:/encoder_tb/data_encoded \
+sim:/encoder_tb/testing \
+sim:/encoder_tb/clk_period
+run -all
+# Break key hit
+quit -sim
+# End time: 10:15:20 on Dec 12,2021, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.encoder_tb
+# vsim -gui work.encoder_tb 
+# Start time: 10:15:33 on Dec 12,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.encoder_tb(rtl)
+# Loading work.encoder(beh)
+add wave -position insertpoint  \
+sim:/encoder_tb/clk \
+sim:/encoder_tb/data_in \
+sim:/encoder_tb/data_encoded \
+sim:/encoder_tb/testing \
+sim:/encoder_tb/clk_period
+run -all
+quit -sim
+# End time: 10:16:19 on Dec 12,2021, Elapsed time: 0:00:46
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.encoder_tb
+# vsim -gui work.encoder_tb 
+# Start time: 10:28:18 on Dec 12,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.encoder_tb(rtl)
+# Loading work.encoder(beh)
+add wave -position insertpoint  \
+sim:/encoder_tb/clk \
+sim:/encoder_tb/data_in \
+sim:/encoder_tb/data_encoded \
+sim:/encoder_tb/testing \
+sim:/encoder_tb/clk_period
+run -all
+quit -sim
+# End time: 10:29:19 on Dec 12,2021, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 2

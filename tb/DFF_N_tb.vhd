@@ -17,7 +17,7 @@ architecture rtl of DFF_N_tb is
     generic( N : natural := 8);		
     port( 
       clk     : in std_logic;
-      a_rst_n : in std_logic;
+      a_rstn : in std_logic;
       en      : in std_logic;
       d       : in std_logic_vector(N - 1 downto 0);
       q       : out std_logic_vector(N - 1 downto 0)
@@ -25,7 +25,7 @@ architecture rtl of DFF_N_tb is
     end component;
 
     signal clk : std_logic := '0';
-    signal a_rst_n : std_logic := '0';
+    signal a_rstn : std_logic := '0';
     signal d: std_logic_vector(Nbit-1 downto 0) := (others => '0');
     signal en : std_logic := '0';
     signal q: std_logic_vector(Nbit-1 downto 0);
@@ -40,7 +40,7 @@ architecture rtl of DFF_N_tb is
         )
         port map(
             clk =>clk,
-            a_rst_n => a_rst_n,
+            a_rstn => a_rstn,
             d => d,
             en => en,
             q => q
@@ -48,11 +48,11 @@ architecture rtl of DFF_N_tb is
 
         stimulus : process
         begin
-            a_rst_n <= '0';
+            a_rstn <= '0';
             en <= '0';
             d <= (others => '0');
             wait for 200 ns;
-            a_rst_n <= '1';
+            a_rstn <= '1';
             en <= '1';
             wait until rising_edge(clk);
             d <= "00000001";

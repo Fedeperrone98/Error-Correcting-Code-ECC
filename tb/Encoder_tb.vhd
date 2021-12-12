@@ -36,7 +36,19 @@ architecture rtl of Encoder_tb is
             data_in <= (others => '0');
 			wait for 16 ns;
             data_in <= "01010101011";
-            --expected output "1001101001010110" -> 39510
+            --expected output "1010101101010100" -> 39510
+            wait for 16 ns;
+            data_in <= "11100011100";
+            --expected output "0001011010001111" -> 5775
+            wait for 16 ns;
+            data_in <= "10101010101";
+            --expected output "1011010010101010" -> 46250
+            wait for 16 ns;
+            data_in <= "00000000000";
+            --expected output "0000000000000000" -> 0
+            wait for 16 ns;
+            data_in <= "11111111111";
+            --expected output "1111111111111111" -> 65535
             wait for 16 ns;
             wait until rising_edge(clk);
             testing <= false;
