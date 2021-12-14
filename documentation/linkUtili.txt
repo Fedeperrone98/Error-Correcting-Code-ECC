@@ -5,3 +5,5 @@ esempio doc https://github.com/gerti98/Electronic-Systems-Project/blob/main/doc/
 
 
 articoli utili https://www.geeksforgeeks.org/hamming-code-in-computer-network/
+
+esempio progetto completo https://github.com/silviobacci/Error_Correcting_Code
