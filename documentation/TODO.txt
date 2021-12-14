@@ -1,5 +1,4 @@
 DOCUMENTATION:
-- continuare l'architettura
+-una volta fatto il decoder ricontrollare il paragrafo introduzione->Hamming decoder
 
 SRC:
--debug encoder
