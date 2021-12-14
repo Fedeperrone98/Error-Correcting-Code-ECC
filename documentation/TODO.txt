@@ -2,3 +2,4 @@ DOCUMENTATION:
 -una volta fatto il decoder ricontrollare il paragrafo introduzione->Hamming decoder
 
 SRC:
+- sviluppare il decoder
