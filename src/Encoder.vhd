@@ -30,7 +30,7 @@ architecture beh of Encoder is
                 xor p1 xor p2 xor p4 xor p8;
 
         --set output bits
-        data_encoded <= p1 & p2 & data_in(0) & p4 & data_in(1) & data_in(2) & data_in(3) & p8 & data_in(4) & data_in(5) & data_in(6) &
-                    data_in(7) & data_in(8) & data_in(9) & data_in(10) & p16;
+        data_encoded <= p16 & data_in(10) & data_in(9) & data_in(8) & data_in(7) & data_in(6) & data_in(5) & data_in(4) &
+                    p8 & data_in(3) & data_in(2) & data_in(1) & p4 & data_in(0) & p2 & p1;
 
     end beh;

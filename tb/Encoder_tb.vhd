@@ -36,13 +36,13 @@ architecture rtl of Encoder_tb is
             data_in <= (others => '0');
 			wait for 16 ns;
             data_in <= "01010101011";
-            --expected output "1010101101010100" -> 39510
+            --expected output "0010101011010101" -> 10965
             wait for 16 ns;
             data_in <= "11100011100";
-            --expected output "0001011010001111" -> 5775
+            --expected output "1111000101101000" -> 61800
             wait for 16 ns;
             data_in <= "10101010101";
-            --expected output "1011010010101010" -> 46250
+            --expected output "0101010100101101" -> 21805
             wait for 16 ns;
             data_in <= "00000000000";
             --expected output "0000000000000000" -> 0
