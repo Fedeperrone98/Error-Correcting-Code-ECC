@@ -23,12 +23,13 @@ architecture beh of Decoder is
 
     begin
         -- generation of control bits
-        c1 <= ;
-        c2 <= ;
-        c4 <= ;
-        c8 <= ;
+        c1 <= (data_encoded(0) xor data_encoded(2)) xor (data_encoded(4) xor data_encoded(6)) xor (data_encoded(8) xor data_encoded(10)) xor (data_encoded(12) xor data_encoded(14));
+        c2 <= (data_encoded(1) xor data_encoded(2)) xor (data_encoded(5) xor data_encoded(6)) xor (data_encoded(9) xor data_encoded(10)) xor (data_encoded(13) xor data_encoded(14));
+        c4 <= (data_encoded(3) xor data_encoded(4)) xor (data_encoded(5) xor data_encoded(6)) xor (data_encoded(11) xor data_encoded(12)) xor (data_encoded(13) xor data_encoded(14));
+        c8 <= (data_encoded(7) xor data_encoded(8)) xor (data_encoded(9) xor data_encoded(10)) xor (data_encoded(11) xor data_encoded(12)) xor (data_encoded(13) xor data_encoded(14));
 
-        p <= ;
+        p <= (data_encoded(0) xor data_encoded(1)) xor (data_encoded(2) xor data_encoded(3)) xor (data_encoded(4) xor data_encoded(5)) xor (data_encoded(6)) xor data_encoded(7)) xor
+        (data_encoded(8) xor data_encoded(9)) xor (data_encoded(10) xor data_encoded(11)) xor (data_encoded(12) xor data_encoded(13)) xor (data_encoded(14) xor data_encoded(15));
 
         c <= (c1 and c2) and (c4 and c8);
 
