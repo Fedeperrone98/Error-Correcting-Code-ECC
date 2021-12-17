@@ -2,22 +2,35 @@
 # Compile of Encoder.vhd was successful.
 # Compile of DFF_N_tb.vhd was successful.
 # Compile of Encoder_tb.vhd was successful.
-# 4 compiles, 0 failed with no errors.
-vsim -gui work.encoder_tb
-# vsim -gui work.encoder_tb 
-# Start time: 17:31:44 on Dec 16,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.encoder_tb(rtl)
-# Loading work.encoder(beh)
-add wave -position insertpoint  \
-sim:/encoder_tb/clk \
-sim:/encoder_tb/data_in \
-sim:/encoder_tb/data_encoded \
-sim:/encoder_tb/testing \
-sim:/encoder_tb/clk_period
-run -all
-quit -sim
-# End time: 17:32:48 on Dec 16,2021, Elapsed time: 0:01:04
-# Errors: 0, Warnings: 3
+# Compile of Decoder.vhd failed with 1 errors.
+# 5 compiles, 1 failed with 1 error.
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Error_Correct.vhd was successful.
+# Compile of Error_Detect.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd failed with 2 errors.
+# Compile of Error_Correct.vhd was successful.
+# Compile of Error_Detect.vhd was successful.
+# 7 compiles, 1 failed with 2 errors.
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd failed with 14 errors.
+# Compile of Error_Correct.vhd was successful.
+# Compile of Error_Detect.vhd was successful.
+# 7 compiles, 1 failed with 14 errors.
