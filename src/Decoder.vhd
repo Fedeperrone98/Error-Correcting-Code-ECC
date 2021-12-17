@@ -1,5 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use IEEE.numeric_std.all;
 
 
 entity Decoder is
@@ -19,7 +20,8 @@ architecture beh of Decoder is
     signal c4 : std_logic;
     signal c8 : std_logic;
     signal p : std_logic;
-    signal c : std_logic_vector;
+    signal c : std_logic_vector(3 downto 0);
+    signal addr : integer;
 
     begin
         -- generation of control bits
@@ -31,7 +33,9 @@ architecture beh of Decoder is
         p <= (data_encoded(0) xor data_encoded(1)) xor (data_encoded(2) xor data_encoded(3)) xor (data_encoded(4) xor data_encoded(5)) xor (data_encoded(6)) xor data_encoded(7)) xor
         (data_encoded(8) xor data_encoded(9)) xor (data_encoded(10) xor data_encoded(11)) xor (data_encoded(12) xor data_encoded(13)) xor (data_encoded(14) xor data_encoded(15));
 
-        c <= (c1 and c2) and (c4 and c8);
+        c <= c8 & c4 & c2 & c1;
 
+        -- find the position of a possible wrong bit
+        addr <= TO_INTEGER(unsigned(c));
         
     end beh;
