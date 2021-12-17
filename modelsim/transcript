@@ -34,3 +34,27 @@
 # Compile of Error_Correct.vhd was successful.
 # Compile of Error_Detect.vhd was successful.
 # 7 compiles, 1 failed with 14 errors.
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd failed with 12 errors.
+# Compile of Error_Correct.vhd was successful.
+# Compile of Error_Detect.vhd was successful.
+# 7 compiles, 1 failed with 12 errors.
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Error_Correct.vhd was successful.
+# Compile of Error_Detect.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Error_Correct.vhd was successful.
+# Compile of Error_Detect.vhd was successful.
+# 7 compiles, 0 failed with no errors.

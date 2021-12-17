@@ -18,8 +18,8 @@ architecture beh of Decoder is
 
     signal c_det : std_logic_vector(3 downto 0);
     signal c_corr : std_logic_vector(3 downto 0);
-    signal p_det : std_logic;
-    signal p_corr : std_logic;
+    signal p_det : std_logic_vector(0 downto 0);
+    signal p_corr : std_logic_vector(0 downto 0);
     signal temp_out : std_logic_vector(10 downto 0);
 
     component Error_Detect is
@@ -59,18 +59,18 @@ architecture beh of Decoder is
         port map(
             data_encoded => data_encoded,
             c => c_det,
-            p => p_det
+            p => p_det(0)
         );
 
         --no error (c=0 and p=0)
-        NE_bit <= '1' when c_det="0000" and p_det='0' else '0';
+        NE_bit <= '1' when c_det="0000" and p_det(0)='0' else '0';
         
         --single error ((c/=0 and p=1) or (c=0 and p=1))
-        SEC_bit <= '1' when c_det/="0000" and p_det='1' else 
-                    '1' when c_det="0000" and p_det='1' else '0';
+        SEC_bit <= '1' when c_det/="0000" and p_det(0)='1' else 
+                    '1' when c_det="0000" and p_det(0)='1' else '0';
 
         --double error (c/=0 and p=0)
-        DED_bit <= '1' when c_det/="0000" and p_det='0' else '0';
+        DED_bit <= '1' when c_det/="0000" and p_det(0)='0' else '0';
 
         reg_middle_c: DFF_N
         generic map( N => 4)
@@ -101,7 +101,7 @@ architecture beh of Decoder is
         port map(
             data_encoded => data_encoded,
             c => c_corr,
-            p => p_corr,
+            p => p_corr(0),
             data_out => temp_out
         );
 
