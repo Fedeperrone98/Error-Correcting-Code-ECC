@@ -3,8 +3,6 @@ use ieee.std_logic_1164.all;
 
 entity Decoder is
     port( 
-        clk : in std_logic;
-        resetn : in std_logic;
         data_encoded : in std_logic_vector(15 downto 0);
         data_out : out std_logic_vector(10 downto 0);
         NE_bit : out std_logic;
@@ -15,95 +13,68 @@ entity Decoder is
 end Decoder;
 
 architecture beh of Decoder is
-
-    signal c_det : std_logic_vector(3 downto 0);
-    signal c_corr : std_logic_vector(3 downto 0);
-    signal p_det : std_logic_vector(0 downto 0);
-    signal p_corr : std_logic_vector(0 downto 0);
-    signal temp_out : std_logic_vector(10 downto 0);
-
-    component Error_Detect is
-        port( 
-            data_encoded : in std_logic_vector(15 downto 0);
-            c : out std_logic_vector(3 downto 0);
-            p : out std_logic
-	    );			
-    end component Error_Detect;
-
-    component Error_Correct is
-        port( 
-            data_encoded : in std_logic_vector(15 downto 0);
-            c : in std_logic_vector(3 downto 0);
-            p : in std_logic;
-            data_out : out std_logic_vector(10 downto 0)
-	    );			
-    end component Error_Correct;
-
-    component DFF_N is
-        generic( N : natural := 8);   
-        port( 
-            clk     : in std_logic;
-            a_rstn : in std_logic;
-            en      : in std_logic;
-            d       : in std_logic_vector(N - 1 downto 0);
-            q       : out std_logic_vector(N - 1 downto 0)
-        );                
-    end component DFF_N;
+    signal c1 : std_logic;
+    signal c2 : std_logic;
+    signal c4 : std_logic;
+    signal c8 : std_logic;
+    signal p : std_logic;
+    signal c : std_logic_vector(3 downto 0);
+    signal temp_cw : std_logic_vector(15 downto 0);
 
     begin
-        --***************************************************************************************************************
-                                --ERROR DETECTION
-        --***************************************************************************************************************
+        -- generation of control bits
+        c1 <= (data_encoded(0) xor data_encoded(2)) xor (data_encoded(4) xor data_encoded(6)) xor (data_encoded(8) xor data_encoded(10)) xor (data_encoded(12) xor data_encoded(14));
+        c2 <= (data_encoded(1) xor data_encoded(2)) xor (data_encoded(5) xor data_encoded(6)) xor (data_encoded(9) xor data_encoded(10)) xor (data_encoded(13) xor data_encoded(14));
+        c4 <= (data_encoded(3) xor data_encoded(4)) xor (data_encoded(5) xor data_encoded(6)) xor (data_encoded(11) xor data_encoded(12)) xor (data_encoded(13) xor data_encoded(14));
+        c8 <= (data_encoded(7) xor data_encoded(8)) xor (data_encoded(9) xor data_encoded(10)) xor (data_encoded(11) xor data_encoded(12)) xor (data_encoded(13) xor data_encoded(14));
 
-        detect: Error_Detect 
-        port map(
-            data_encoded => data_encoded,
-            c => c_det,
-            p => p_det(0)
-        );
+        p <= (data_encoded(0) xor data_encoded(1)) xor (data_encoded(2) xor data_encoded(3)) xor (data_encoded(4) xor data_encoded(5)) xor (data_encoded(6) xor data_encoded(7)) xor
+             (data_encoded(8) xor data_encoded(9)) xor (data_encoded(10) xor data_encoded(11)) xor (data_encoded(12) xor data_encoded(13)) xor (data_encoded(14) xor data_encoded(15));
 
-        --no error (c=0 and p=0)
-        NE_bit <= '1' when c_det="0000" and p_det(0)='0' else '0';
+        c <= c8 & c4 & c2 & c1;
+
+        -- when c=0 and p=1 there was an error in p16
+        temp_cw(15) <= not(data_encoded(15)) when c="0000" and p='1' else data_encoded(15);
         
-        --single error ((c/=0 and p=1) or (c=0 and p=1))
-        SEC_bit <= '1' when c_det/="0000" and p_det(0)='1' else 
-                    '1' when c_det="0000" and p_det(0)='1' else '0';
-
-        --double error (c/=0 and p=0)
-        DED_bit <= '1' when c_det/="0000" and p_det(0)='0' else '0';
-
-        reg_middle_c: DFF_N
-        generic map( N => 4)
-        port map( 
-            clk     => clk,
-            a_rstn =>  resetn,
-            en      => '1',
-            d       => c_det,
-            q       => c_corr
-        );
-
-        reg_middle_p: DFF_N
-        generic map( N => 1)
-        port map( 
-            clk     => clk,
-            a_rstn =>  resetn,
-            en      => '1',
-            d       => p_det,
-            q       => p_corr
-        );
+        --when c="1110" (14) there was an error in 14-bit
+        temp_cw(14) <= not(data_encoded(14)) when c="1110" and p='1' else data_encoded(14);
+ 
+        --when c="1101" (13) there was an error in 13-bit
+        temp_cw(13) <= not(data_encoded(13)) when c="1101" and p='1' else data_encoded(13);
+ 
+        --when c="1100" (12) there was an error in 12-bit
+        temp_cw(12) <= not(data_encoded(12)) when c="1100" and p='1' else data_encoded(12);
+ 
+        --when c="1011" (11) there was an error in 11-bit
+        temp_cw(11) <= not(data_encoded(11)) when c="1011" and p='1' else data_encoded(11);
+ 
+        --when c="1010" (10) there was an error in 10-bit
+        temp_cw(10) <= not(data_encoded(10)) when c="1010" and p='1' else data_encoded(10);
+ 
+        --when c="1001" (9) there was an error in 9-bit
+        temp_cw(9) <= not(data_encoded(9)) when c="1001" and p='1' else data_encoded(9);
+ 
+        --when c="1000" (8) there was an error in 8-bit
+        temp_cw(8) <= not(data_encoded(8)) when c="1000" and p='1' else data_encoded(8);
+ 
+        --when c="0110" (6) there was an error in 6-bit
+        temp_cw(6) <= not(data_encoded(6)) when c="0110" and p='1' else data_encoded(6);
+ 
+        --when c="0101" (5) there was an error in 5-bit
+        temp_cw(5) <= not(data_encoded(5)) when c="0101" and p='1' else data_encoded(5);
+ 
+        --when c="0100" (4) there was an error in 4-bit
+        temp_cw(4) <= not(data_encoded(4)) when c="0100" and p='1' else data_encoded(4);
+ 
+        --when c="0010" (2) there was an error in 2-bit
+        temp_cw(2) <= not(data_encoded(2)) when c="0010" and p='1' else data_encoded(2);
+ 
+        temp_cw(7) <= data_encoded(7);
+        temp_cw(3) <= data_encoded(3);
+        temp_cw(1 downto 0) <= data_encoded(1 downto 0);
+ 
+ 
+        --set data_out with the correction
+        data_out <= temp_cw(14 downto 8) & temp_cw(6 downto 4) & temp_cw(2);
         
-
-        --***************************************************************************************************************
-                                --ERROR CORRECTION
-        --***************************************************************************************************************
-
-        correct: Error_correct 
-        port map(
-            data_encoded => data_encoded,
-            c => c_corr,
-            p => p_corr(0),
-            data_out => temp_out
-        );
-
-        data_out <= temp_out;
     end beh;
