@@ -25,7 +25,7 @@ architecture rtl of Decoder_tb is
     signal data_out: std_logic_vector(10 downto 0);
     signal NE_bit : std_logic;
     signal SEC_bit : std_logic;
-    signal DED_bit : std_logic
+    signal DED_bit : std_logic;
     signal testing : boolean := true;
     
     begin
@@ -43,12 +43,50 @@ architecture rtl of Decoder_tb is
         stimulus : process
         begin
             data_encoded <= (others => '0');
-			wait for 16 ns;
-            wait for 16 ns;
-            wait for 16 ns;
-            wait for 16 ns;
-            wait for 16 ns;
-            wait for 16 ns;
+			wait for 32 ns;
+
+            -- correct input-> "0010101011010101" (10965)
+
+            --assume that there was not an error
+            -- expected out -> data_out= "01010101011" (683), NE=1, SEC=DED=0
+            data_encoded <= "0010101011010101";
+            wait for 32 ns;
+
+            --assume that there was a single error in p16
+            -- expected out -> data_out= "01010101011" (683), NE=0, SEC=1, DED=0
+            data_encoded <= "0010101011010100";
+            wait for 32 ns;
+
+            --assume that there was a single error in d10
+            -- expected out -> data_out= "01010101011" (683), NE=0, SEC=1, DED=0
+            data_encoded <= "0000101011010101";
+            wait for 32 ns;
+
+            --assume that there was a single error in d11
+            -- expected out -> data_out= "01010101011" (683), NE=0, SEC=1, DED=0
+            data_encoded <= "0110101011010101";
+            wait for 32 ns;
+
+            --assume that there was a single error in d3
+            -- expected out -> data_out= "01010101011" (683), NE=0, SEC=1, DED=0
+            data_encoded <= "0010101011110101";
+            wait for 32 ns;
+
+            --assume that there was a single error in p8
+            -- expected out -> data_out= "01010101011" (683), NE=0, SEC=1, DED=0
+            data_encoded <= "0010101001010101";
+            wait for 32 ns;
+
+            --assume that there was a double error in p8 and d1
+            -- expected out -> data_out=invalid info, NE=0, SEC=0, DED=1
+            data_encoded <= "0010101001010001";
+            wait for 32 ns;
+
+            --assume that there was a double error in d10 and d9
+            -- expected out -> data_out=invalid info, NE=0, SEC=0, DED=1
+            data_encoded <= "0010110011010101";
+            wait for 32 ns;
+
             wait until rising_edge(clk);
             testing <= false;
         end process;

@@ -4,3 +4,371 @@
 # Compile of Encoder_tb.vhd was successful.
 # Compile of Decoder.vhd was successful.
 # 5 compiles, 0 failed with no errors.
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd failed with 5 errors.
+# 6 compiles, 1 failed with 5 errors.
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.decoder_tb
+# vsim -gui work.decoder_tb 
+# Start time: 09:23:28 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.decoder_tb(rtl)
+# Loading work.decoder(beh)
+# ** Warning: (vsim-8683) Uninitialized out port /decoder_tb/dut/NE_bit has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /decoder_tb/dut/SEC_bit has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /decoder_tb/dut/DED_bit has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position insertpoint  \
+sim:/decoder_tb/clk \
+sim:/decoder_tb/data_encoded \
+sim:/decoder_tb/data_out \
+sim:/decoder_tb/NE_bit \
+sim:/decoder_tb/SEC_bit \
+sim:/decoder_tb/DED_bit \
+sim:/decoder_tb/testing \
+sim:/decoder_tb/clk_period
+run -all
+quit -sim
+# End time: 09:27:39 on Dec 20,2021, Elapsed time: 0:04:11
+# Errors: 0, Warnings: 10
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.decoder_tb
+# vsim -gui work.decoder_tb 
+# Start time: 09:27:52 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.decoder_tb(rtl)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/decoder_tb/clk \
+sim:/decoder_tb/data_encoded \
+sim:/decoder_tb/data_out \
+sim:/decoder_tb/NE_bit \
+sim:/decoder_tb/SEC_bit \
+sim:/decoder_tb/DED_bit \
+sim:/decoder_tb/testing \
+sim:/decoder_tb/clk_period
+run -all
+quit -sim
+# End time: 09:28:30 on Dec 20,2021, Elapsed time: 0:00:38
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.decoder_tb
+# vsim -gui work.decoder_tb 
+# Start time: 09:35:05 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.decoder_tb(rtl)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/decoder_tb/clk \
+sim:/decoder_tb/data_encoded \
+sim:/decoder_tb/data_out \
+sim:/decoder_tb/NE_bit \
+sim:/decoder_tb/SEC_bit \
+sim:/decoder_tb/DED_bit \
+sim:/decoder_tb/testing \
+sim:/decoder_tb/clk_period
+run -all
+quit -sim
+# End time: 09:36:02 on Dec 20,2021, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.decoder_tb
+# vsim -gui work.decoder_tb 
+# Start time: 09:38:37 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.decoder_tb(rtl)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/decoder_tb/clk \
+sim:/decoder_tb/data_encoded \
+sim:/decoder_tb/data_out \
+sim:/decoder_tb/NE_bit \
+sim:/decoder_tb/SEC_bit \
+sim:/decoder_tb/DED_bit \
+sim:/decoder_tb/testing \
+sim:/decoder_tb/clk_period
+run -all
+quit -sim
+# End time: 09:45:38 on Dec 20,2021, Elapsed time: 0:07:01
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.decoder_tb
+# vsim -gui work.decoder_tb 
+# Start time: 09:45:47 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.decoder_tb(rtl)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/decoder_tb/clk \
+sim:/decoder_tb/data_encoded \
+sim:/decoder_tb/data_out \
+sim:/decoder_tb/NE_bit \
+sim:/decoder_tb/SEC_bit \
+sim:/decoder_tb/DED_bit \
+sim:/decoder_tb/testing \
+sim:/decoder_tb/clk_period
+run -all
+# Break key hit
+quit -sim
+# End time: 10:05:09 on Dec 20,2021, Elapsed time: 0:19:22
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.decoder_tb
+# vsim -gui work.decoder_tb 
+# Start time: 10:05:27 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.decoder_tb(rtl)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/decoder_tb/clk \
+sim:/decoder_tb/data_encoded \
+sim:/decoder_tb/data_out \
+sim:/decoder_tb/NE_bit \
+sim:/decoder_tb/SEC_bit \
+sim:/decoder_tb/DED_bit \
+sim:/decoder_tb/testing \
+sim:/decoder_tb/clk_period
+run -all
+quit -sim
+# End time: 10:07:21 on Dec 20,2021, Elapsed time: 0:01:54
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.decoder_tb
+# vsim -gui work.decoder_tb 
+# Start time: 10:07:34 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.decoder_tb(rtl)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/decoder_tb/clk \
+sim:/decoder_tb/data_encoded \
+sim:/decoder_tb/data_out \
+sim:/decoder_tb/NE_bit \
+sim:/decoder_tb/SEC_bit \
+sim:/decoder_tb/DED_bit \
+sim:/decoder_tb/testing \
+sim:/decoder_tb/clk_period
+run -all
+quit -sim
+# End time: 10:10:17 on Dec 20,2021, Elapsed time: 0:02:43
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.decoder_tb
+# vsim -gui work.decoder_tb 
+# Start time: 10:10:31 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.decoder_tb(rtl)
+# Loading work.decoder(beh)
+quit -sim
+# End time: 10:10:39 on Dec 20,2021, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.decoder_tb
+# vsim -gui work.decoder_tb 
+# Start time: 10:10:55 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.decoder_tb(rtl)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/decoder_tb/clk \
+sim:/decoder_tb/data_encoded \
+sim:/decoder_tb/data_out \
+sim:/decoder_tb/NE_bit \
+sim:/decoder_tb/SEC_bit \
+sim:/decoder_tb/DED_bit \
+sim:/decoder_tb/testing \
+sim:/decoder_tb/clk_period
+run -all
+quit -sim
+# End time: 10:12:34 on Dec 20,2021, Elapsed time: 0:01:39
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.decoder_tb
+# vsim -gui work.decoder_tb 
+# Start time: 10:12:46 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.decoder_tb(rtl)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/decoder_tb/clk \
+sim:/decoder_tb/data_encoded \
+sim:/decoder_tb/data_out \
+sim:/decoder_tb/NE_bit \
+sim:/decoder_tb/SEC_bit \
+sim:/decoder_tb/DED_bit \
+sim:/decoder_tb/testing \
+sim:/decoder_tb/clk_period
+run -all
+quit -sim
+# End time: 10:14:38 on Dec 20,2021, Elapsed time: 0:01:52
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.decoder_tb
+# vsim -gui work.decoder_tb 
+# Start time: 10:14:57 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.decoder_tb(rtl)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/decoder_tb/clk \
+sim:/decoder_tb/data_encoded \
+sim:/decoder_tb/data_out \
+sim:/decoder_tb/NE_bit \
+sim:/decoder_tb/SEC_bit \
+sim:/decoder_tb/DED_bit \
+sim:/decoder_tb/testing \
+sim:/decoder_tb/clk_period
+run -all
+quit -sim
+# End time: 10:16:57 on Dec 20,2021, Elapsed time: 0:02:00
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.decoder_tb
+# vsim -gui work.decoder_tb 
+# Start time: 10:17:09 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.decoder_tb(rtl)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/decoder_tb/clk \
+sim:/decoder_tb/data_encoded \
+sim:/decoder_tb/data_out \
+sim:/decoder_tb/NE_bit \
+sim:/decoder_tb/SEC_bit \
+sim:/decoder_tb/DED_bit \
+sim:/decoder_tb/testing \
+sim:/decoder_tb/clk_period
+run -all
+quit -sim
+# End time: 10:18:17 on Dec 20,2021, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.decoder_tb
+# vsim -gui work.decoder_tb 
+# Start time: 10:19:23 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.decoder_tb(rtl)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/decoder_tb/clk \
+sim:/decoder_tb/data_encoded \
+sim:/decoder_tb/data_out \
+sim:/decoder_tb/NE_bit \
+sim:/decoder_tb/SEC_bit \
+sim:/decoder_tb/DED_bit \
+sim:/decoder_tb/testing \
+sim:/decoder_tb/clk_period
+run -all
+quit -sim
+# End time: 10:20:41 on Dec 20,2021, Elapsed time: 0:01:18
+# Errors: 0, Warnings: 2
