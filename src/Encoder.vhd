@@ -1,13 +1,11 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-
 entity Encoder is
     port( 
         data_in : in std_logic_vector(10 downto 0);
         data_encoded : out std_logic_vector(15 downto 0)
-	);
-			
+	);			
 end Encoder;
 
 architecture beh of Encoder is   

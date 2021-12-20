@@ -8,8 +8,7 @@ entity Decoder is
         NE_bit : out std_logic;
         SEC_bit : out std_logic;
         DED_bit : out std_logic
-	);
-			
+	);			
 end Decoder;
 
 architecture beh of Decoder is
@@ -22,6 +21,11 @@ architecture beh of Decoder is
     signal temp_cw : std_logic_vector(15 downto 0);
 
     begin
+
+        --************************************************************************************************************************************************************************************
+        --      ERROR DETECTION
+        --************************************************************************************************************************************************************************************
+
         -- generation of control bits
         c1 <= (data_encoded(0) xor data_encoded(2)) xor (data_encoded(4) xor data_encoded(6)) xor (data_encoded(8) xor data_encoded(10)) xor (data_encoded(12) xor data_encoded(14));
         c2 <= (data_encoded(1) xor data_encoded(2)) xor (data_encoded(5) xor data_encoded(6)) xor (data_encoded(9) xor data_encoded(10)) xor (data_encoded(13) xor data_encoded(14));
@@ -32,6 +36,11 @@ architecture beh of Decoder is
              (data_encoded(8) xor data_encoded(9)) xor (data_encoded(10) xor data_encoded(11)) xor (data_encoded(12) xor data_encoded(13)) xor (data_encoded(14) xor data_encoded(15));
 
         c <= c8 & c4 & c2 & c1;
+
+        
+        --************************************************************************************************************************************************************************************
+        --      ERROR CORRECTION
+        --************************************************************************************************************************************************************************************
 
         -- when c=0 and p=1 there was an error in p16
         temp_cw(15) <= not(data_encoded(15)) when c="0000" and p='1' else data_encoded(15);
@@ -76,7 +85,7 @@ architecture beh of Decoder is
         temp_cw(1 downto 0) <= data_encoded(1 downto 0);
  
  
-        --set data_out with the correction
+        --set outputs 
         data_out <= temp_cw(14 downto 8) & temp_cw(6 downto 4) & temp_cw(2);
 
         NE_bit <= '1' when c="0000" and p='0' else '0';
