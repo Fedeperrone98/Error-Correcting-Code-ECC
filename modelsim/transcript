@@ -56,3 +56,286 @@ run -all
 quit -sim
 # End time: 12:28:34 on Dec 20,2021, Elapsed time: 0:01:08
 # Errors: 0, Warnings: 7
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# Compile of ECC.vhd was successful.
+# Compile of ECC_tb.vhd was successful.
+# Compile of Enc_Dec_tb.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.enc_dec_tb
+# vsim -gui work.enc_dec_tb 
+# Start time: 15:34:09 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.enc_dec_tb(rtl)
+# Loading work.encoder(beh)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/enc_dec_tb/clk \
+sim:/enc_dec_tb/data_in \
+sim:/enc_dec_tb/data_encoded_out \
+sim:/enc_dec_tb/data_encoded_in \
+sim:/enc_dec_tb/data_out \
+sim:/enc_dec_tb/NE_bit \
+sim:/enc_dec_tb/SEC_bit \
+sim:/enc_dec_tb/DED_bit \
+sim:/enc_dec_tb/testing \
+sim:/enc_dec_tb/clk_period
+run -all
+# Break key hit
+quit -sim
+# End time: 15:37:04 on Dec 20,2021, Elapsed time: 0:02:55
+# Errors: 0, Warnings: 3
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# Compile of ECC.vhd was successful.
+# Compile of ECC_tb.vhd was successful.
+# Compile of Enc_Dec_tb.vhd failed with 3 errors.
+# 9 compiles, 1 failed with 3 errors.
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# Compile of ECC.vhd was successful.
+# Compile of ECC_tb.vhd was successful.
+# Compile of Enc_Dec_tb.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.enc_dec_tb
+# vsim -gui work.enc_dec_tb 
+# Start time: 15:37:50 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.enc_dec_tb(rtl)
+# Loading work.encoder(beh)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/enc_dec_tb/clk \
+sim:/enc_dec_tb/data_in \
+sim:/enc_dec_tb/data_encoded_out \
+sim:/enc_dec_tb/data_encoded_in \
+sim:/enc_dec_tb/data_out \
+sim:/enc_dec_tb/NE_bit \
+sim:/enc_dec_tb/SEC_bit \
+sim:/enc_dec_tb/DED_bit \
+sim:/enc_dec_tb/testing \
+sim:/enc_dec_tb/clk_period
+run -all
+quit -sim
+# End time: 15:40:02 on Dec 20,2021, Elapsed time: 0:02:12
+# Errors: 0, Warnings: 3
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# Compile of ECC.vhd was successful.
+# Compile of ECC_tb.vhd was successful.
+# Compile of Enc_Dec_tb.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.enc_dec_tb
+# vsim -gui work.enc_dec_tb 
+# Start time: 15:40:28 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.enc_dec_tb(rtl)
+# Loading work.encoder(beh)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/enc_dec_tb/clk \
+sim:/enc_dec_tb/data_in \
+sim:/enc_dec_tb/data_encoded_out \
+sim:/enc_dec_tb/data_encoded_in \
+sim:/enc_dec_tb/data_out \
+sim:/enc_dec_tb/NE_bit \
+sim:/enc_dec_tb/SEC_bit \
+sim:/enc_dec_tb/DED_bit \
+sim:/enc_dec_tb/testing \
+sim:/enc_dec_tb/clk_period
+run -all
+quit -sim
+# End time: 15:43:06 on Dec 20,2021, Elapsed time: 0:02:38
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# Compile of ECC.vhd was successful.
+# Compile of ECC_tb.vhd was successful.
+# Compile of Enc_Dec_tb.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.enc_dec_tb
+# vsim -gui work.enc_dec_tb 
+# Start time: 15:43:19 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.enc_dec_tb(rtl)
+# Loading work.encoder(beh)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/enc_dec_tb/clk \
+sim:/enc_dec_tb/data_in \
+sim:/enc_dec_tb/data_encoded_out \
+sim:/enc_dec_tb/data_encoded_in \
+sim:/enc_dec_tb/data_out \
+sim:/enc_dec_tb/NE_bit \
+sim:/enc_dec_tb/SEC_bit \
+sim:/enc_dec_tb/DED_bit \
+sim:/enc_dec_tb/testing \
+sim:/enc_dec_tb/clk_period
+run -all
+quit -sim
+# End time: 15:45:07 on Dec 20,2021, Elapsed time: 0:01:48
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# Compile of ECC.vhd was successful.
+# Compile of ECC_tb.vhd was successful.
+# Compile of Enc_Dec_tb.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.enc_dec_tb
+# vsim -gui work.enc_dec_tb 
+# Start time: 15:45:26 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.enc_dec_tb(rtl)
+# Loading work.encoder(beh)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/enc_dec_tb/clk \
+sim:/enc_dec_tb/data_in \
+sim:/enc_dec_tb/data_encoded_out \
+sim:/enc_dec_tb/data_encoded_in \
+sim:/enc_dec_tb/data_out \
+sim:/enc_dec_tb/NE_bit \
+sim:/enc_dec_tb/SEC_bit \
+sim:/enc_dec_tb/DED_bit \
+sim:/enc_dec_tb/testing \
+sim:/enc_dec_tb/clk_period
+run -all
+quit -sim
+# End time: 15:47:40 on Dec 20,2021, Elapsed time: 0:02:14
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# Compile of ECC.vhd was successful.
+# Compile of ECC_tb.vhd was successful.
+# Compile of Enc_Dec_tb.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.enc_dec_tb
+# vsim -gui work.enc_dec_tb 
+# Start time: 15:47:53 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.enc_dec_tb(rtl)
+# Loading work.encoder(beh)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/enc_dec_tb/clk \
+sim:/enc_dec_tb/data_in \
+sim:/enc_dec_tb/data_encoded_out \
+sim:/enc_dec_tb/data_encoded_in \
+sim:/enc_dec_tb/data_out \
+sim:/enc_dec_tb/NE_bit \
+sim:/enc_dec_tb/SEC_bit \
+sim:/enc_dec_tb/DED_bit \
+sim:/enc_dec_tb/testing \
+sim:/enc_dec_tb/clk_period
+run -all
+quit -sim
+# End time: 15:50:03 on Dec 20,2021, Elapsed time: 0:02:10
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# Compile of ECC.vhd was successful.
+# Compile of ECC_tb.vhd was successful.
+# Compile of Enc_Dec_tb.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.enc_dec_tb
+# vsim -gui work.enc_dec_tb 
+# Start time: 15:50:27 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.enc_dec_tb(rtl)
+# Loading work.encoder(beh)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/enc_dec_tb/clk \
+sim:/enc_dec_tb/data_in \
+sim:/enc_dec_tb/data_encoded_out \
+sim:/enc_dec_tb/data_encoded_in \
+sim:/enc_dec_tb/data_out \
+sim:/enc_dec_tb/NE_bit \
+sim:/enc_dec_tb/SEC_bit \
+sim:/enc_dec_tb/DED_bit \
+sim:/enc_dec_tb/testing \
+sim:/enc_dec_tb/clk_period
+run -all
+quit -sim
+# End time: 15:51:12 on Dec 20,2021, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 2
+# Compile of DFF_N.vhd was successful.
+# Compile of Encoder.vhd was successful.
+# Compile of DFF_N_tb.vhd was successful.
+# Compile of Encoder_tb.vhd was successful.
+# Compile of Decoder.vhd was successful.
+# Compile of Decoder_tb.vhd was successful.
+# Compile of ECC.vhd was successful.
+# Compile of ECC_tb.vhd was successful.
+# Compile of Enc_Dec_tb.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.enc_dec_tb
+# vsim -gui work.enc_dec_tb 
+# Start time: 15:53:48 on Dec 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.enc_dec_tb(rtl)
+# Loading work.encoder(beh)
+# Loading work.decoder(beh)
+add wave -position insertpoint  \
+sim:/enc_dec_tb/clk \
+sim:/enc_dec_tb/data_in \
+sim:/enc_dec_tb/data_encoded_out \
+sim:/enc_dec_tb/data_encoded_in \
+sim:/enc_dec_tb/data_out \
+sim:/enc_dec_tb/NE_bit \
+sim:/enc_dec_tb/SEC_bit \
+sim:/enc_dec_tb/DED_bit \
+sim:/enc_dec_tb/testing \
+sim:/enc_dec_tb/clk_period
+run -all
+quit -sim
+# End time: 15:54:24 on Dec 20,2021, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 2

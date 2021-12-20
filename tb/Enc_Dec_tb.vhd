@@ -28,7 +28,6 @@ architecture rtl of Enc_Dec_tb is
     end component;
 
     signal clk : std_logic := '0';
-    signal resetn : std_logic := '0';
     signal data_in: std_logic_vector(10 downto 0) := (others => '0');
     signal data_encoded_out: std_logic_vector(15 downto 0) := (others => '0');
     signal data_encoded_in: std_logic_vector(15 downto 0) := (others => '0');
@@ -58,12 +57,8 @@ architecture rtl of Enc_Dec_tb is
 
         stimulus : process
         begin
-            reset <= '0';
             data_in <= (others => '0');
             data_encoded_in <= (others => '0');
-            wait for 32 ns;
-
-            reset <= '1';
             wait for 32 ns;
             
             --assume that there was not an error
@@ -72,11 +67,52 @@ architecture rtl of Enc_Dec_tb is
             data_encoded_in <= data_encoded_out;
             wait for 32 ns;
 
-            --assume that there was not an error
+            --assume that there was a single error in p16
+            -- expected out -> data_out= "01010101011" (683), NE=0, SEC=1, DED=0
             data_in <= "01010101011";
-            data_encoded_in <= data_encoded_out;
+            data_encoded_in <= not(data_encoded_out(15)) & data_encoded_out(14 downto 0);
             wait for 32 ns;
 
+            --assume that there was a single error in d10
+            -- expected out -> data_out= "01010101011" (683), NE=0, SEC=1, DED=0
+            data_in <= "01010101011";
+            data_encoded_in <= data_encoded_out(15 downto 14) & not(data_encoded_out(13)) & data_encoded_out(12 downto 0);
+            wait for 32 ns;
+
+            --assume that there was a single error in d11
+            -- expected out -> data_out= "01010101011" (683), NE=0, SEC=1, DED=0
+            data_in <= "01010101011";
+            data_encoded_in <= data_encoded_out(15) & not(data_encoded_out(14)) & data_encoded_out(13 downto 0);
+            wait for 32 ns;
+
+            --assume that there was a single error in d3
+            -- expected out -> data_out= "01010101011" (683), NE=0, SEC=1, DED=0
+            data_in <= "01010101011";
+            data_encoded_in <= data_encoded_out(15 downto 6) & not(data_encoded_out(5)) & data_encoded_out(4 downto 0);
+            wait for 32 ns;
+
+            --assume that there was a single error in p8
+            -- expected out -> data_out= "01010101011" (683), NE=0, SEC=1, DED=0
+            data_in <= "01010101011";
+            data_encoded_in <= data_encoded_out(15 downto 8) & not(data_encoded_out(7)) & data_encoded_out(6 downto 0);
+            wait for 32 ns;
+
+            --assume that there was a double error in p8 and d1
+            -- expected out -> data_out=invalid info, NE=0, SEC=0, DED=1
+            data_in <= "01010101011";
+            data_encoded_in <= data_encoded_out(15 downto 8) & not(data_encoded_out(7)) & data_encoded_out(6 downto 3) & not(data_encoded_out(2)) & data_encoded_out(1 downto 0);
+            wait for 32 ns;
+
+            --assume that there was a double error in d10 and d9
+            -- expected out -> data_out=invalid info, NE=0, SEC=0, DED=1
+            data_in <= "01010101011";
+            data_encoded_in <= data_encoded_out(15 downto 14) & not(data_encoded_out(13)) & not(data_encoded_out(12)) & data_encoded_out(11 downto 0);
+            wait for 32 ns;
+
+            --assume that there was a double error in d4 and d7
+            -- expected out -> data_out=invalid info, NE=0, SEC=0, DED=1
+            data_in <= "01010101011";
+            data_encoded_in <= data_encoded_out(15 downto 11) & not(data_encoded_out(10)) & data_encoded_out(9 downto 7) & not(data_encoded_out(6)) & data_encoded_out(5 downto 0);
             wait for 32 ns;
             
             wait until rising_edge(clk);
