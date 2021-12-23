@@ -5,6 +5,3 @@ tra l'input del decoder e l'output dell'encoder.
 
 -per poter inserire degli errori si deve fare un comparison test bench
 testando entrambi il decoder e l'encoder senza raggrupparli in un unico ECC
-
-TB:
--fare un comparison tb
