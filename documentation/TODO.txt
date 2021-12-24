@@ -1,7 +1,3 @@
 DOCUMENTATION:
-- scrivere nel paragrafo del test bench che l'ECC_tb ritorna in output quello
-che gli è stato dato in input, poichè non è possibile inserire degli errori 
-tra l'input del decoder e l'output dell'encoder.
 
--per poter inserire degli errori si deve fare un comparison test bench
-testando entrambi il decoder e l'encoder senza raggrupparli in un unico ECC
+-fare la sintesi

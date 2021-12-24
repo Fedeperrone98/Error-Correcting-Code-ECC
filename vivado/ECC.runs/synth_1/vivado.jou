@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Dec 24 12:15:13 2021
+# Process ID: 2156
+# Current directory: C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/vivado/ECC.runs/synth_1
+# Command line: vivado.exe -log ECC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ECC.tcl
+# Log file: C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/vivado/ECC.runs/synth_1/ECC.vds
+# Journal file: C:/Users/Utente/Desktop/Magistrale/Electronics and communications systems/Electronic systems/Progetto/Error-Correcting-Code-ECC/vivado/ECC.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ECC.tcl -notrace
