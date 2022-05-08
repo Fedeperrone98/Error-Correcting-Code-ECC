@@ -1,2 +1,2 @@
 # Error Correcting Code ECC
- Implementation of SECDED (Single Error Correction, Double Error Detection), implemented for Electronic and Communication Systems course
+ Implementation of SECDED (Single Error Correction, Double Error Detection), implemented for Electronic and Communication Systems course at University of Pisa
